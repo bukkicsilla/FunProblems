@@ -1,3 +1,5 @@
+//You are given a set of intervals that might overlap. compute their union.
+//for example [1,4] [3,5] [2,3] [7,8] -> [1,5] [7,8]
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
