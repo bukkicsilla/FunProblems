@@ -1,6 +1,6 @@
 //given a matrix of nxn integers from 1 to n^2 find out the longest path formed of consecutive integers, 
 //each elements in the path should be neighbors in the matrix, entries can be the same number
-
+//it computes the consecutive integers
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;

@@ -1,3 +1,6 @@
+//given a matrix of nxn integers from 1 to n^2 find out the longest path formed of consecutive integers, 
+//each elements in the path should be neighbors in the matrix, entries can be the same numbers
+//this computes the length of the longest path
 import java.util.List;
 import java.util.ArrayList;
 
@@ -101,7 +104,7 @@ public class SolutionLongCons{
     }
 
     public int  compute_best(int i, int j){
-
+        if (best[i][j] != 1) return best[i][j];
 	if ((i > 0) && ( matrix[i-1][j] + 1 == matrix[i][j]))  best[i][j] = Math.max(best[i][j], 1 + compute_best(i-1, j));
 	if ((j > 0) && (matrix[i][j-1] + 1 == matrix[i][j]))  best[i][j] = Math.max(best[i][j], 1 + compute_best(i, j-1));
 	if ((i + 1 < n) && ( matrix[i+1][j] + 1 == matrix[i][j])) best[i][j] = Math.max(best[i][j], 1 + compute_best(i+1, j));
