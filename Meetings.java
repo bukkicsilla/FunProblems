@@ -1,3 +1,6 @@
+//Given n meetings, (start_i, duration_i) find the minimum number of rooms to
+//schedule them in so that they don't overlap. 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
