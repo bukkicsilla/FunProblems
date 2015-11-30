@@ -1,3 +1,5 @@
+//Write a method that computes the cubic root of a float number.
+
 public class CubicRootStatic{
     
     static double eps = 0.0000000001;
